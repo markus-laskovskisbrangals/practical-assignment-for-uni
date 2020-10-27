@@ -1,35 +1,37 @@
+import { StatusBar } from 'expo-status-bar';
 import * as React from 'react';
-import { Text, View, StyleSheet, Image } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableOpacity, Linking } from 'react-native';
 import Constants from 'expo-constants';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image style={styles.img} source={require('./rat.png')}/>
-      <Text style={styles.parOne}>Hello World from Group G2: Emīls Daivids Kļaviņš: -!</Text>
-      <Text style={styles.parTwo}>This is my - first React Native application!</Text>
+		<TouchableOpacity onPress={()=>{Linking.openURL('https://youtu.be/DLzxrzFCyOs');}}>
+			<Image style={styles.img} source={require('./assets/rat.png')}/>
+        </TouchableOpacity>
+		<Text style={styles.parOne}>Hello World from Group G2: Baiba Ozola!</Text>
+		<Text style={styles.parTwo}>This is my Baiba Ozola first React Native application!</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create ({
   container: {
+	backgroundColor: '#708090',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
   parOne: {
     textAlign: 'center',
-    textAlignmentsVertical: 'center',
     color: '#4b0082',
-    fontFamily: "Arial-BoldMT",
+    fontFamily: "monospace",
     fontSize: 20
   },
   parTwo: {
     textAlign: 'center',
-    textAlignmentsVertical: 'center',
     color: '#cec6da',
-    fontFamily: "Arial-BoldMT",
+    fontFamily: "Roboto",
     fontSize: 16
   },
   img: {

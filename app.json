@@ -1,0 +1,12 @@
+{
+  "name": "emilsdaivids-klavins",
+  "displayName": "emilsdaivids-klavins",
+  "expo": {
+    "name": "emilsdaivids-klavins",
+    "slug": "emilsdaivids-klavins",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

@@ -1,3 +1,16 @@
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
 import * as React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
 import Constants from 'expo-constants';
@@ -5,9 +18,9 @@ import Constants from 'expo-constants';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image style={styles.img} source={require('./rat.png')}/>
-      <Text style={styles.parOne}>Hello World from Group G2: Emīls Daivids Kļaviņš: -!</Text>
-      <Text style={styles.parTwo}>This is my - first React Native application!</Text>
+      <Image style={styles.img} source={require('/yes.jpg')}/>
+      <Text style={styles.parOne}>Hello World from Group G2: Ricards Zvaigzne</Text>
+      <Text style={styles.parTwo}>This is my - first React Native application</Text>
     </View>
   );
 }
@@ -21,9 +34,9 @@ const styles = StyleSheet.create ({
   parOne: {
     textAlign: 'center',
     textAlignmentsVertical: 'center',
-    color: '#4b0082',
-    fontFamily: "Arial-BoldMT",
-    fontSize: 20
+    color: '#30148',
+    fontFamily: "TimesNewRoman-BoldMT",
+    fontSize: 30
   },
   parTwo: {
     textAlign: 'center',
@@ -33,7 +46,7 @@ const styles = StyleSheet.create ({
     fontSize: 16
   },
   img: {
-    width: 50,
-    height: 50
+    width: 150,
+    height: 150
   }
 });

@@ -5,7 +5,7 @@ import Constants from 'expo-constants';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image style={styles.img} source={require('./rat.png')}/>
+      <Image style={styles.img} source={require('./pepe.png')}/>
       <Text style={styles.parOne}>Hello World from Group G2: Emīls Daivids Kļaviņš: -!</Text>
       <Text style={styles.parTwo}>This is my - first React Native application!</Text>
     </View>
